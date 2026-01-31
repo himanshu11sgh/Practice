@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* .heading {
+            color: red;
+        }
+        button {
+            background-color: blue;
+        }
+        div {
+            color: white;
+            width: 19%;
+            height: 40px;
+            display: inline-block;
+        } */
+        /* .inner {
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 50px;
+            margin: 10px;
+        } */
+        /* header, main, footer {
+            border: 5px solid red;
+        }
+        main, footer {
+            width: 100px;
+        }
+        main {
+            height: 500px;
+        }
+        footer {
+            height: 100px;
+        } */
+        /* .heading {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+        .box, .specialbox {
+            background-color: green;
+            border: 2px solid black;
+            margin: 20px;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+        .box {
+            z-index: 100;
+        } */
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: grey;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: space-evenly;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="heading">Heading1</h1>
+    <h2 class="heading">Heading2</h2>
+    <h3 class="heading">Heading3</h3>
+    <div id="box" style="background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae eius ullam consequuntur repudiandae earum, reprehenderit quaerat id totam ex?</div>
+    <button style="background-color: pink;">Click me</button> -->
+
+    <!-- <h3>Heading</h3>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus voluptatibus repudiandae dolores dicta ipsam repellendus voluptatum fuga accusamus. Officiis ullam corrupti libero necessitatibus voluptatem earum eveniet obcaecati numquam quas, perferendis explicabo porro nisi quia ex architecto vitae expedita? Doloremque perspiciatis dolores dolor dolore aliquid cum illum non ea dolorem, a quas consectetur vero odio, alias ratione ipsum ullam iure corporis velit deleniti. Reprehenderit consequatur magni harum eaque ex cupiditate est numquam aut quidem sunt tempore a cum ipsum temporibus in saepe ratione, quis rem! Labore et, distinctio recusandae amet neque cum consequatur dicta vitae, omnis, debitis quis rerum illo nesciunt ad corporis voluptate! Vitae labore nihil accusamus. Ipsa ducimus accusamus culpa fugit id aut, asperiores totam ad inventore quo animi mollitia. Obcaecati consectetur eius veniam magni totam atque ratione est repellendus expedita reprehenderit sed quasi error ipsa, consequatur animi velit nam neque delectus laudantium eveniet nisi voluptatibus facere quod. Dolorum distinctio, reprehenderit perspiciatis voluptatibus obcaecati dolores eaque ratione maiores eligendi assumenda qui vitae rem unde dolor beatae delectus illum eius nobis temporibus nihil velit commodi sint! Nobis dolore repellat odit velit doloremque rerum praesentium architecto amet quasi, dolores mollitia voluptates, non aperiam iste ea deleniti quia exercitationem dolorem maiores dolorum reiciendis excepturi, voluptatum accusantium vitae. Eum, molestiae dignissimos ipsam deserunt sit similique recusandae itaque vero incidunt architecto repudiandae facilis debitis nulla consequatur aspernatur quidem fuga hic quae. Suscipit eum obcaecati facilis laboriosam iure consequatur aliquid hic molestiae modi labore ducimus nulla, id dolorem nesciunt ab doloribus officia at accusamus, molestias doloremque vero. Facilis beatae inventore error repellendus enim! Asperiores porro illum harum officiis dolorem rerum tempora, facere voluptatibus veritatis eaque voluptatem laboriosam voluptas ullam ratione quidem, deleniti a maxime ex? Sapiente aut perferendis obcaecati, praesentium cum nobis ullam officiis? Molestiae in qui, sapiente animi assumenda vero voluptatum expedita labore.</div> -->
+
+    <!-- <h4>my name is himanshu</h4>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis dolor dignissimos quasi debitis commodi beatae incidunt voluptatem odit nobis officia eius aspernatur, eligendi velit maxime impedit eveniet illum similique?
+    Mollitia dolorem possimus aut soluta voluptate vitae facilis velit, pariatur eligendi optio natus! Ad dolorem pariatur consequuntur excepturi alias provident! Maxime accusantium nulla eos quod temporibus consectetur aliquid dolorum libero!
+    Beatae doloribus sunt corporis cumque in nemo deleniti praesentium sint nesciunt dignissimos dolorum molestias, quis possimus aut omnis! Saepe fugit eligendi quisquam ducimus cupiditate animi libero molestias, assumenda tenetur nobis!
+    Repellat, vitae cupiditate? Recusandae, asperiores quis odit eius exercitationem consectetur neque qui ad explicabo accusamus quasi minima, adipisci nesciunt quae corporis assumenda harum nihil sit quia fugiat! Numquam, velit odio.
+    Rerum iure recusandae deserunt quos nesciunt iste assumenda eos, cupiditate minus. Odio, voluptas. Earum ad error quidem vitae? Eligendi tempore non illum minima eos est voluptatem dolore error nulla quasi?
+    Tempore quo quod error eveniet! Veritatis sapiente, similique molestias ex laboriosam consectetur aspernatur sit quas, blanditiis quam dolorum earum! Sit praesentium rerum itaque. Odio soluta qui porro laborum, voluptate nemo?
+    Qui nisi eos quo tempora fuga quam hic nostrum odit molestiae ut ad possimus, natus optio iure eum quae consequuntur, a repudiandae eligendi vel. Beatae, recusandae. Ex architecto doloribus temporibus!
+    Dolores, nulla ab, beatae optio ipsa perspiciatis facere laudantium ducimus porro consequuntur eligendi! Maxime, id placeat aliquam quod eum iusto, soluta ex tenetur labore quae illo, ut aut dolorum repellendus.
+    Perspiciatis esse aperiam quasi itaque nostrum qui expedita harum maiores minima veniam, rerum neque magni, sed vitae officia nam iste excepturi, obcaecati quaerat. Ullam fuga est numquam! Delectus, voluptates ut.
+    Officiis, eius maiores aliquam voluptatibus, ipsum similique optio rerum blanditiis perferendis, repudiandae ab. Maxime quo eaque optio cum necessitatibus ab, consectetur nobis suscipit voluptatibus at quas ea doloremque placeat provident!</div> -->
+
+    <!-- <div id="outer">
+        Outer
+        <div id="inner">Inner</div>
+    </div> -->
+
+    <!-- <div class="outer">
+        <div class="inner">Div1</div>
+        <div class="inner">Div2</div>
+        <div class="inner">Div3</div>
+    </div> -->
+
+    <!-- <div>
+        Div1
+    </div> -->
+    <!-- <nav style="background-color: black;">
+        <div style="color: orange; font-size: 20px;">amazon.in</div>
+        <div>Account</div>
+        <div>My Cart</div>
+        <div>Contact Us</div>
+        <div>
+            <input type="text" placeholder="search Amazon.in">
+            <button style="color: white; background-color: orange;">Search</button>
+        </div>
+    </nav> -->
+
+    <!-- <div class="outer">
+        <div class="inner">Div1</div>
+        <div class="inner" style="visibility: visible;">Div2</div>
+        <div class="inner">Div3</div>
+        <div class="inner">Div4</div>
+    </div> -->
+
+    <!-- <header style="background-color: black;">
+        <div style="color: orange; font-size: 20px; width: 19%; display: inline-block;">amazon.in</div>
+        <div style="color: white; width: 19%; display: inline-block;">Account</div>
+        <div style="color: white; width: 19%; display: inline-block;">My Cart</div>
+        <div style="color: white; width: 19%; display: inline-block;">Contact Us</div>
+        <div style="display: inline-block;">
+            <input type="text" placeholder="search Amazon.in">
+            <button style="color: white; background-color: orange;">Search</button>
+        </div>
+    </header>
+    <main style="background-color: green;">
+
+    </main>
+    <footer style="background-color: yellow;">
+
+    </footer> -->
+
+    <!-- <div class="heading">Position Playground</div>
+    <div class="box">Box1</div>
+    <div class="specialbox" style="position: fixed; right: 0px; bottom: 0px; z-index: 1; background-color: teal;">Box2</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div> -->
+
+    <!-- <div style="height: 200px; width: 200px; background-image: url('cats/cat1.jpeg'); background-size: cover;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto qui ipsa asperiores eos voluptates labore earum sed consectetur vel, porro repellat quae id quibusdam sint dicta laborum aliquam harum!
+        Dicta labore corrupti non debitis in ducimus, tempora mollitia iusto veniam ea, veritatis sapiente! Optio porro, doloremque nulla a, ratione illum illo modi cupiditate debitis molestias officia temporibus nemo accusamus?
+        Explicabo, culpa! Sint quas corrupti omnis totam explicabo a quibusdam ut sunt doloribus alias ullam, est sit recusandae molestiae suscipit voluptatem blanditiis libero ex autem quod obcaecati odio in asperiores.
+        Totam veniam, eligendi sit doloribus repellendus alias possimus! Ex earum non id quae ratione rerum obcaecati quidem sunt, harum consectetur libero. Ipsa numquam voluptatum tempore eligendi vero culpa praesentium magni?
+        Ipsum quisquam, illo dolores ratione ex aliquid quia voluptatum ducimus ad nostrum, illum provident nemo quos saepe quas harum reiciendis iusto cupiditate quo explicabo eius, nesciunt iste voluptatibus aut? Eligendi?
+    </div> -->
+
+    <div class="container" style="height: 100vh; width: 500px;">
+        <div class="box" style="background-color: green; border: 2px solid black;">Box1</div>
+        <div class="box" style="background-color: red; border: 2px solid black; height: 140px;">Box2</div>
+        <div class="box" style="background-color: orange; border: 2px solid black;">Box3</div>
+        <div class="box" style="background-color: teal; border: 2px solid black;">Box4</div>
+        <div class="box" style="background-color: violet; border: 2px solid black;">Box5</div>
+        <div class="box" style="background-color: yellow; border: 2px solid black;">Box6</div>
+    </div>
+</body>
+</html>
