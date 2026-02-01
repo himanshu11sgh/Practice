@@ -264,6 +264,7 @@ a.sort(function(a, b) {return b-a})
 // a.reverse()
 console.log(a)
 
+// Math 
 a = -10.578
 console.log(Math.PI)
 console.log(Math.ceil(a))

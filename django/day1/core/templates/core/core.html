@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core 1</title>
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+</head>
+<body>
+    <div>This is core page.</div>
+    <div>My name is {{name}}</div>
+    {% include 'core/util1.html' %}
+    <img src="{% static 'base/images/cats/cat1.jpeg' %}" alt="">
+    <div>
+        <a href="{% url 'core2_view' %}">Go to Core2</a>
+    </div>
+</body>
+<script src="{% static 'core/js/core.js' %}"></script>
+<script src="{% static 'base/js/base.js' %}"></script>
+</html>
