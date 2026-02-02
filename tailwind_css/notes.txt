@@ -1,0 +1,61 @@
+1. JIT Compiler
+    - Just in Time Compiler
+2. @layer base
+    - allows to add classes to html tags automatically.
+3. @layer components
+    - allows to create class which has some custom tailwind classes.
+    - allows to create multiple classes in the same block.
+4. @utility <class_name>
+    - allows to create class which has some custom tailwind classes.
+    - allows to create single class at a time.
+5. --color-chestnut
+    - allow to create custom classes to handle jit work.
+
+1. Shadcn
+    - library to provide prebuilt components for tailwind css.
+
+
+---------------------------- Text ------------------------------------
+text-left, text-center, text-right
+text-[20px], text-xs, text-sm, text-md, text-lg, text-xl, text-2xl
+text-white, text-blue-500, text-[#ffffff]
+bg-white, bg-blue-500
+font-mono, font-serif
+font-light, font-medium, font-normal, font-bold, font-extrabold
+
+
+-------------------------- Box Model --------------------------------
+m-5, mt-5, mb-5, ml-5, mr-5, ms-5, me-5, mx-5, my-5
+p-5, pt-5, pb-5, pl-5, pr-5, ps-5, pe-5, px-5, py-5
+border-2
+border-red, border-black
+rounded-sm, rounded-4xl, rounded-full
+h-1, h-80, h-auto, h-full
+w-1, w-80, w-auto, w-full
+
+------------------------- Position ---------------------------------
+absolute, relative, static, fixed, sticky
+top-5, bottom-5, left-5, right-5
+
+------------------------- Flexbox ---------------------------------
+flex, hidden, inline, block, inline-block, 
+justify-center, justify-evenly, justify-around, justify-between, justify-start, justify-end
+flex-row, flex-col, flex-row-reverse, flex-col-reverse
+flex-wrap
+items-start, items-center, items-end
+content-start, content-center, content-end, content-around, content-between, content-evenly
+gap-7, space-x-7, space-y-7
+
+------------------------------ Grid ------------------------------
+grid
+grid-cols-3, xs:grid-cols-1, grid-cols-[1fr_repeat(2,2fr)]
+
+------------------------------ Media Queries --------------------------
+sm:bg-blue-400 sm:text-yellow-400, md:bg-green-400 md:text-orange-500 // min-width
+max-sm:bg-blue-400, max-md:bg-green-400 // max-width
+max-[300px]:bg-blue-400, min-[600px]:bg-red-400
+
+------------------------------- dark mode ---------------------------
+text-black dark:text-white
+
+------------------------------- 

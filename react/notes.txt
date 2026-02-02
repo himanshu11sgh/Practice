@@ -1,0 +1,7 @@
+1. Build by Facebook
+2. Able to develop websites and mobile apps.
+3. JS and Virtual DOM
+    - render the new page without refreshing the web page.
+    - replace the required content in the web page only.
+    
+
