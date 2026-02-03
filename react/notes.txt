@@ -3,5 +3,9 @@
 3. JS and Virtual DOM
     - render the new page without refreshing the web page.
     - replace the required content in the web page only.
-    
-
+4. Fragments
+    - <> </>
+    - allows to insert multiple elements without stacking divs.
+5. <ChatInput />
+    - similar to <ChatInput></ChatInput> and ChatInput()
+    - It is components in react which allows you to create your own HTML Element.

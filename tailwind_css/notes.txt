@@ -27,8 +27,8 @@ font-light, font-medium, font-normal, font-bold, font-extrabold
 -------------------------- Box Model --------------------------------
 m-5, mt-5, mb-5, ml-5, mr-5, ms-5, me-5, mx-5, my-5
 p-5, pt-5, pb-5, pl-5, pr-5, ps-5, pe-5, px-5, py-5
-border-2
-border-red, border-black
+border-2, border-t-2, border-b-2, border-l-2, border-r-2,
+border-red-500, border-black
 rounded-sm, rounded-4xl, rounded-full
 h-1, h-80, h-auto, h-full
 w-1, w-80, w-auto, w-full

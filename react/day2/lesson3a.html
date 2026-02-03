@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 10px;
+            margin-left: 10px;
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        .js-container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <script type="text/babel">
+        const container = document.querySelector('.js-container');
+        const root = ReactDOM.createRoot(container);
+
+        function Count({ count, setCount }) {
+            function buttonClickHandler() {
+                setCount(count+1)
+            }
+            return (
+                <>
+                    <button
+                        onClick={buttonClickHandler}
+                    >Clicked {count} {count <= 1 ? 'time' : 'times'}</button>
+                </>
+            )
+        }
+
+        function Reset({ setCount }) {
+            function resetClickHandler() {
+                setCount(0)
+            }
+            return (
+                <>
+                    <button className="btn"
+                        onClick={resetClickHandler}
+                    >Reset</button>
+                </>
+            )
+        }
+
+        function App() {
+            const [ count, setCount ] = React.useState(0);
+            const countElem = React.useRef(null);
+
+            function buttonClickHandler() {
+                setCount(count+1)
+            }
+
+            function autoClickHandler() {
+                setInterval(() => {
+                    if (countElem) {
+                        countElem.current.click();
+                    }
+                }, 1000)
+            }
+
+            return (
+                <>
+                    <button className="btn" ref={countElem}
+                        onClick={buttonClickHandler}
+                    >Clicked {count} {count <= 1 ? 'time' : 'times'}</button>
+                    <Reset setCount={setCount} />
+                    <button className="btn"
+                        onClick={autoClickHandler}
+                    >Auto Click</button>
+                </>
+            )
+        }
+
+        root.render(<App />)
+
+    </script>
+</body>
+</html>

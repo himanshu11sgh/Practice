@@ -1,0 +1,7 @@
+.chatmessage-container {
+    display: flex;
+    justify-content: start;
+}
+.chatmessage-item {
+    margin-left: 10px;
+}
