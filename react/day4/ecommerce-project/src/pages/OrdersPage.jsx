@@ -10,7 +10,7 @@ export function OrdersPage() {
       <title>Orders</title>
       <link rel="icon" href="/images/favicons/orders.png" />
 
-      <Header />
+      <Header cart={0}/>
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
 

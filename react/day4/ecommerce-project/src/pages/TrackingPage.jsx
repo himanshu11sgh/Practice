@@ -7,7 +7,7 @@ export function TrackingPage() {
       <title>Tracking</title>
       <link rel="icon" href="/images/favicons/tracking.png" />
 
-      <Header />
+      <Header cart={0}/>
       <div className="tracking-page">
         <div className="order-tracking">
           <a className="back-to-orders-link link-primary" href="/orders/">
