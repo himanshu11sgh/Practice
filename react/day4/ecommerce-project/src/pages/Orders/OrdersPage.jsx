@@ -1,10 +1,10 @@
 
 import { useState, useEffect, Fragment } from "react";
-import dayjs from "dayjs";
-import { formatMoney } from "../utils/money";
 import axios from "axios";
 import {Link} from "react-router";
-import {Header} from "../components/Header";
+import dayjs from "dayjs";
+import { formatMoney } from "../../utils/money";
+import {Header} from "../../components/Header";
 import "./OrdersPage.css";
 import BuyAgainImg from "../assets/images/icons/buy-again.png";
 
