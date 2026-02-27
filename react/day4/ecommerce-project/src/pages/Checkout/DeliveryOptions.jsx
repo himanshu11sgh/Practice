@@ -19,7 +19,6 @@ export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }) {
           });
           await loadCart();
         }
-        console.log('deliveryOption.id', deliveryOption.id, 'cartItem.deliveryOptionId', cartItem.deliveryOptionId)
         return (
           <div key={deliveryOption.id} className="delivery-option"
           onClick={updateDeliveryOption}>
