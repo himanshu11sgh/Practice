@@ -6,13 +6,13 @@ import {Header} from '../../components/Header';
 import {ProductGrid} from "./ProductGrid";
 import "./HomePage.css";
 
-export function HomePage({ cart }) {
+export function HomePage({ cart, loadCart }) {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    axios.get("/api/products/")
-    .then(
-      (response) => setProducts(response.data)
-    )
+    (async function () {
+      const response = await axios.get("/api/products/")
+      setProducts(response.data)
+    })()
   }, [])
 
   return (
@@ -20,9 +20,9 @@ export function HomePage({ cart }) {
       <title>Ecommerce Project</title>
       <link rel="icon" href="/images/favicons/home.png" />
 
-      <Header cart={cart}/>
+      <Header cart={cart} />
       <div className="home-page">
-        <ProductGrid products={products} />
+        <ProductGrid products={products} loadCart={loadCart} />
       </div>
     </>
   )

@@ -1,11 +1,11 @@
 
-import {Header} from "../components/Header";
+import {Header} from "../../components/Header";
 import "./Page404.css";
 
-export function Page404() {
+export function Page404({cart}) {
   return (
     <>
-      <Header />
+      <Header cart={cart}/>
       <div class="heading-container">
         <div class="heading-title">404</div>
         <div class="heading-text">Page Not Found</div>
