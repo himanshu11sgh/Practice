@@ -16,7 +16,7 @@ function App() {
     .then(
       (response) => setCart(response.data)
     )
-  })
+  }, [])
   return (
     <Routes>
       <Route index element={<HomePage cart={cart} />} />
