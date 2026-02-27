@@ -28,11 +28,11 @@ export function Header({cart}) {
       </div>
 
       <div className="right-section">
-        <NavLink className="orders-link header-link" to="/orders/">
+        <NavLink className="orders-link header-link" to="/orders">
           <span className="orders-text">Orders</span>
         </NavLink>
 
-        <NavLink className="cart-link header-link" to="/checkout/">
+        <NavLink className="cart-link header-link" to="/checkout">
           <img className="cart-icon" src={CartIconImg} />
           <div className="cart-quantity">{totalQuantity}</div>
           <div className="cart-text">Cart</div>
