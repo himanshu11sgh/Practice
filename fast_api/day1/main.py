@@ -1,11 +1,21 @@
 from fastapi import FastAPI
 from typing import Optional
+from pydantic import BaseModel
 
 app = FastAPI()
+
+class Blog(BaseModel):
+  title: str
+  body: str
+  published: Optional[bool] = False
 
 @app.get("/blog")
 def index(sort: Optional[str] = None, limit: int = 10, unpublished: bool = False, ):
   return {"data": f"{limit} {'unpublished' if unpublished else ''} blogs from the db {'sorted' if sort else ''}"}
+
+@app.post("/blog")
+def create_blog(request: Blog):
+  return {"data": f"Blog is created with {request.title}"}
 
 @app.get("/about")
 def about():
