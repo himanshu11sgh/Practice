@@ -19,8 +19,8 @@ router = APIRouter(
 def all(db: Session=Depends(get_db)):
   return blog.all(db)
 
-@router.get("/{id}", response_model=schemas.ShowBlog)
-def get(id: int, db: Session=Depends(get_db)):
+@router.get("/{id}")
+def get(id: int, db: Session=Depends(get_db)) -> schemas.ShowBlog:
   return blog.get(id, db)
 
 @router.post("/", status_code=status.HTTP_201_CREATED, response_model=schemas.ShowBlog)
